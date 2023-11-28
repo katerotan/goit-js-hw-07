@@ -6,6 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 2</title>
     <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .gallery {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+      }
+      .gallery-image {
+        width: 100%;
+        transition: transform 0.3s ease;
+      }
+      .gallery-item {
+        width: 430px;
+        height: 243px;
+        margin: 25px;
+        overflow: hidden;
+        transition: transform box-shadow 0.3s ease;
+      }
+      .gallery-item:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 255, 0.5);
+        transform: scale(1.1);
+      }
+      .gallery-item:hover img {
+        transform: scale(1.1); /* Збільшує розмір при наведенні */
+      }
+    </style>
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
